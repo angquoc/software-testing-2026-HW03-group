@@ -1,0 +1,126 @@
+name: Bug report
+description: Báo lỗi tìm được khi kiểm thử EShop (HW03, GUI & Usability)
+title: "[MSSV][T1|T2|T3][Mã màn hình/luồng][Nền tảng] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Đọc mục 4 README trước khi báo: Tìm issue trùng, gắn đủ label (severity, platform, task, ia), ảnh bắt buộc.
+        Không ghi thông tin cá nhân của người tham gia usability (họ tên, SĐT, Zalo, email, khuôn mặt). Dùng mã phiên P1 đến P7.
+  - type: input
+    id: student
+    attributes:
+      label: MSSV người báo
+      placeholder: "23120061"
+    validations:
+      required: true
+  - type: dropdown
+    id: task
+    attributes:
+      label: Task
+      options:
+        - "T1: GUI Checklist"
+        - "T2: Usability Evaluation"
+        - "T3: Cross-Browser / Cross-Platform"
+    validations:
+      required: true
+  - type: input
+    id: scope
+    attributes:
+      label: Màn hình hoặc luồng
+      description: Mã theo sheet chọn màn hình của nhóm
+      placeholder: "W-06 Hồ sơ cá nhân / FL-05 Admin: Tạo danh mục → Thêm sản phẩm"
+    validations:
+      required: true
+  - type: dropdown
+    id: ia
+    attributes:
+      label: Khía cạnh giao diện (IA)
+      description: Bắt buộc với T1, T3; T2 chọn nếu xác định được
+      multiple: true
+      options:
+        - "IA-01: Chuẩn chung (FR-21)"
+        - "IA-02: Form (FR-22)"
+        - "IA-03: Điều hướng (FR-23)"
+        - "IA-04: Phản hồi / trạng thái (FR-24)"
+        - "Không xác định"
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Mục checklist hoặc phiên phát hiện lỗi
+      description: Mã mục checklist (T1, T3) hoặc mã phiên và mốc thời gian trong video (T2)
+      placeholder: "CL-23 / P3, phút 04:15"
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Phân hệ
+      options:
+        - Web
+        - Web Admin
+        - Mobile
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Trình duyệt / OS / thiết bị
+      description: Ghi cả công cụ nếu chạy trên cloud
+      placeholder: "Chrome 1xx, Windows 11 / Safari 17, macOS Sonoma (BrowserStack Live) / Expo Go x.y, Android 1x"
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Mức độ (Severity)
+      options:
+        - Critical
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+  - type: textarea
+    id: precondition
+    attributes:
+      label: Điều kiện tiên quyết
+      placeholder: "Đã reset DB; đăng nhập test@eshop.com; đã có 1 đơn ở trạng thái Chờ xác nhận ..."
+  - type: textarea
+    id: steps
+    attributes:
+      label: Các bước tái hiện
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Kết quả mong đợi
+      description: Trích yêu cầu tương ứng trong README của EShop (FR-21 đến FR-24 hoặc FR khác), hoặc tiêu chí của mục checklist
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Kết quả thực tế
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Ảnh chụp
+      description: Kéo thả ảnh vào đây (bắt buộc). T3 phải thấy trình duyệt / OS / thiết bị, URL localhost và lớp chữ đè MSSV, họ tên, email
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Ghi chú
+      description: "Related #<số issue> nếu trùng lỗi đã báo; Related angquoc/software-testing-2026-HW02-group#<số issue> nếu trùng bug HW02"
