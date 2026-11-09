@@ -18,9 +18,9 @@ Quy tắc (đề §5, nhóm dùng cách hiểu chặt nhất):
 - Task 3 (ít nhất 3 nền tảng) chạy trên checklist của chính mình, không cần chia. Mỗi người tự ghi nền tảng vào bảng khi đã chốt.
 - Mã màn hình (W-xx, A-xx, M-xx) và mã luồng (FL-xx) lấy theo sheet chọn màn hình của nhóm.
 
-| Thành viên | MSSV | Màn hình chính (Task 1) | Màn hình phụ | Luồng usability (Task 2) | Nền tảng (Task 3) |
+| Thành viên | 23120017 | Màn hình chính (Task 1) | Màn hình phụ | Luồng usability (Task 2) | Nền tảng (Task 3) |
 |---|---|---|---|---|---|
-| Trần Thanh An | 23120017 | | | | |
+| Trần Thanh An | 23120017 | A-05 Quản lý mã giảm giá (Admin) | A-02 Dashboard + sidebar, A-03 Quản lý danh mục | FL-10 Mobile: Đăng ký → Đăng nhập → Cập nhật hồ sơ | |
 | Hồ Thùy Hương | 23120046 | W-08 Thanh toán (có mã giảm giá) | W-01 Trang chủ, W-02 Chi tiết sản phẩm, W-07 Giỏ hàng | FL-01 Web: Mua hàng có coupon | |
 | Nguyễn Thị Ánh Ngọc | 23120061 | W-06 Hồ sơ cá nhân & lịch sử đơn hàng | W-04 Đăng ký, W-03 Đăng nhập | FL-05 Admin: Tạo danh mục → Thêm sản phẩm | |
 
